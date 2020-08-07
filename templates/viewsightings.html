@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sightings List</title>
+  </head>
+  <body>
+    <h3>Flowers List</h3>
+    <table border="1">
+      <thead>
+        <td>Date</td>
+        <td>Location</td>
+        <td>Seen By</td>
+      </thead>
+
+      {% for row in rows %}
+
+      <tr>
+        <td>{{row["sighted"]}}</td>
+        <td>{{row["location"]}}</td>
+        <td>{{row["person"]}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+
+    <br /><br />
+    <a href="/">Return to home page</a>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flower List</title>
+  </head>
+  <body>
+    <h3>Flowers List</h3>
+    <table border="1">
+      <thead>
+        <b><td>Common Name</td></b>
+        <td>Genus</td>
+        <td>Species</td>
+      </thead>
+      {% for row in rows %}
+
+      <tr>
+        <td>{{row["comname"]}}</td>
+        <td>{{row["genus"]}}</td>
+        <td>{{row["species"]}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+
+    <br /><br />
+
+    <h3>View 10 Most Recent Sightings</h3>
+
+    <form action="/viewsightings" method="POST">
+      Select Flower (By common name) <input type="text" name="name" />
+      <input type="submit" value="View" />
+    </form>
+
+    <a href="/">Return to home page</a>
+  </body>
+</html>

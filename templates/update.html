@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Flower</title>
+  </head>
+  <body>
+    <h2>Flower Information</h2>
+    <form action="/udetails" method="POST">
+      <table>
+        <tr>
+          <td>(OLD) Common Name</td>
+          <td><input type="text" name="oldname" /></td>
+        </tr>
+        <tr>
+          <td>(NEW) Common Name</td>
+          <td><input type="text" name="newname" /></td>
+        </tr>
+        <tr>
+          <td>(NEW) Genus</td>
+          <td><input type="text" name="newgenus" /></td>
+        </tr>
+        <tr>
+          <td>(NEW) Species</td>
+          <td><input type="text" name="newspecies" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Update" /></td>
+        </tr>
+      </table>
+    </form>
+    <a href="/">Return to home page</a>
+  </body>
+</html>
